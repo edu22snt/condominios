@@ -1,0 +1,68 @@
+.loading-spinner {
+  background-color: #0000001f;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+
+  .loading-message {
+    text-align: center;
+    align-self: start;
+    padding-top: -100px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+}
+
+.loading {
+  height: 100px;
+  align-self: end;
+}
+
+.loading .spinner {
+  height: 100px;
+  width: 100px;
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+  margin: auto;
+}
+
+.loading .spinner .path {
+  stroke-dasharray: 1, 100;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: #888;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 100;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 100;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 100;
+    stroke-dashoffset: -124px;
+  }
+}

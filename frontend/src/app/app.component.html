@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Condominio Parque Real</a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            aria-label="Toggle navigation"
+            [attr.aria-expanded]="collapsed"
+            (click)="toggleCollapse()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse animated fadeInDown" id="navbarSupportedContent" [class.show]="collapsed">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/" href="#" (click)="hideCollapse()">Home</a>
+        </li>
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link active" aria-current="page" routerLink="/login" href="#" (click)="hideCollapse()">Login</a>
+        </li>
+        <li ngbDropdown class="nav-item">
+          <button ngbDropdownItem routerLink="/correio" (click)="hideCollapse()">Correio</button>
+          <div class="dropdown-divider"></div>
+          <button ngbDropdownItem routerLink="/visitante" (click)="hideCollapse()">Visitante</button>
+          <div class="dropdown-divider"></div>
+        </li>
+        <li ngbDropdown class="nav-item" *ngIf="showAdmin">
+          <a href (click)="false" class="nav-link" ngbDropdownToggle>Administrador</a>
+          <div ngbDropdownMenu>
+            <button ngbDropdownItem routerLink="/unidade" (click)="hideCollapse()">Unidade</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem routerLink="/automovel" (click)="hideCollapse()">Automóvel</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem routerLink="/correio" (click)="hideCollapse()">Correio</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem routerLink="/morador" (click)="hideCollapse()">Morador</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem routerLink="/portaria" (click)="hideCollapse()">Portaria</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem routerLink="/proprietario" (click)="hideCollapse()">Proprietário</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem routerLink="/visitante" (click)="hideCollapse()">Visitante</button>
+          </div>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link active" aria-current="page" (click)="logout()" href="#">Sair</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <main>
+    <alert-message></alert-message>
+    <confirm-message></confirm-message>
+    <router-outlet></router-outlet>
+    <app-my-loader></app-my-loader>
+  </main>
+</div>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="#">Privacy</a></li>
+    <li class="list-inline-item"><a href="#">Terms</a></li>
+    <li class="list-inline-item"><a href="#">Support</a></li>
+  </ul>
+</footer>

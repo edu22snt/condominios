@@ -1,0 +1,6 @@
+<div class="alert alert-dismissible {{item.type}}" *ngFor="let item of items" (click)="deleteMessage(item)">
+  <button type="button" class="close" aria-label="close" data-dismiss="alert">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <span [innerHTML]="item.message"></span>
+</div>
