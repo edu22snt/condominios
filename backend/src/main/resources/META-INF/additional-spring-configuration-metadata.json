@@ -1,0 +1,44 @@
+{
+  "properties": [
+    {
+      "name": "com.packboo.postal.correios.host",
+      "type": "java.lang.String",
+      "description": "Brazilian Correios host."
+    },
+    {
+      "name": "com.packboo.postal.correios.protocol",
+      "type": "java.lang.String",
+      "description": "Brazilian Correios protocol."
+    },
+    {
+      "name": "com.packboo.postal.correios.user",
+      "type": "java.lang.String",
+      "description": "Brazilian Correios user name."
+    },
+    {
+      "name": "com.packboo.postal.correios.password",
+      "type": "java.lang.String",
+      "description": "Brazilian Correios user password."
+    },
+    {
+      "name": "com.packboo.postal.correios.cartao",
+      "type": "java.lang.String",
+      "description": "Brazilian Correios card."
+    },
+    {
+      "name": "allow.origin",
+      "type": "java.lang.String",
+      "description": "Allow host origin values (comma separeted)."
+    },
+    {
+      "name": "packboo.app.jwtSecret",
+      "type": "java.lang.String",
+      "description": "The JWT secret."
+    },
+    {
+      "name": "packboo.app.jwtExpirationMs",
+      "type": "java.lang.String",
+      "description": "The JWT expiration tokenó."
+    }
+  ]
+}
