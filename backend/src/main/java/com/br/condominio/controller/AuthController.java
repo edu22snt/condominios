@@ -1,9 +1,5 @@
 package com.br.condominio.controller;
 
-import com.packboo.postal.security.jwt.JwtUtils;
-import com.packboo.postal.security.payload.request.LoginRequest;
-import com.packboo.postal.security.payload.response.JwtResponse;
-import com.packboo.postal.security.services.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,6 +12,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.br.condominio.security.jwt.JwtUtils;
+import com.br.condominio.security.payload.request.LoginRequest;
+import com.br.condominio.security.payload.response.JwtResponse;
+import com.br.condominio.security.services.UserDetailsImpl;
 
 import javax.validation.Valid;
 import java.util.List;

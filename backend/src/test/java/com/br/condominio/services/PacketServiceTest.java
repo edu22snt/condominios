@@ -1,4 +1,4 @@
-package com.packboo.postal.services;
+package com.br.condominio.services;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;

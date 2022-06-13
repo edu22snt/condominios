@@ -1,10 +1,11 @@
 package com.br.condominio.controller;
 
-import com.packboo.postal.entities.Company;
-import com.packboo.postal.services.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.br.condominio.entities.Company;
+import com.br.condominio.services.CompanyService;
 
 import java.util.List;
 import java.util.Optional;

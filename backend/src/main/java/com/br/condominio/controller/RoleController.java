@@ -1,12 +1,13 @@
 package com.br.condominio.controller;
 
-import com.packboo.postal.entities.Role;
-import com.packboo.postal.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.br.condominio.entities.Role;
+import com.br.condominio.services.RoleService;
 
 import java.util.List;
 

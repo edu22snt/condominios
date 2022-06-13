@@ -1,4 +1,4 @@
-package com.packboo.postal;
+package com.br.condominio;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ActiveProfiles("test")
-class PackbooApplicationTests {
+class CondominioApplicationTests {
 
 	@Test
 	void contextLoads() {

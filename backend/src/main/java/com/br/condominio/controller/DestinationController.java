@@ -1,11 +1,11 @@
 package com.br.condominio.controller;
 
-import com.packboo.postal.entities.Destination;
-import com.packboo.postal.repositories.DestinationRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.br.condominio.entities.Destination;
+import com.br.condominio.repositories.DestinationRepository;
 
 import java.util.List;
 import java.util.Optional;

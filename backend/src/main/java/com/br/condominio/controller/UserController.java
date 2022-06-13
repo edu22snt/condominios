@@ -1,11 +1,12 @@
 package com.br.condominio.controller;
 
-import com.packboo.postal.entities.User;
-import com.packboo.postal.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+
+import com.br.condominio.entities.User;
+import com.br.condominio.services.UserService;
 
 import java.util.List;
 import java.util.Optional;

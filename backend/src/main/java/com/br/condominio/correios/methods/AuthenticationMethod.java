@@ -6,8 +6,8 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 
-import com.packboo.postal.correios.CorreiosAPI;
-import com.packboo.postal.correios.models.Authentication;
+import com.br.condominio.correios.CorreiosAPI;
+import com.br.condominio.correios.models.Authentication;
 
 public class AuthenticationMethod {
 

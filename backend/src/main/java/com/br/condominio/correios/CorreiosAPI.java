@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 
 import org.springframework.web.client.RestTemplate;
 
-import com.packboo.postal.correios.methods.AuthenticationMethod;
-import com.packboo.postal.correios.methods.BalanceMethod;
-import com.packboo.postal.correios.models.Authentication;
-import com.packboo.postal.correios.models.Balance;
+import com.br.condominio.correios.methods.AuthenticationMethod;
+import com.br.condominio.correios.methods.BalanceMethod;
+import com.br.condominio.correios.models.Authentication;
+import com.br.condominio.correios.models.Balance;
 
 public class CorreiosAPI {
 
