@@ -1,3 +1,4 @@
+import { ApartamentoModel } from "./apartamento.model";
 import { BaseEntity } from "./base.model";
 
 export class ProprietarioModel implements BaseEntity<number> {
@@ -6,4 +7,5 @@ export class ProprietarioModel implements BaseEntity<number> {
   telefone: number;
   email: string;
   cpf: string;
+  apartamento: ApartamentoModel;
 }

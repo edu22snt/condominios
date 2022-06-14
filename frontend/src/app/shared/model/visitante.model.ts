@@ -6,5 +6,6 @@ export class VisitanteModule implements BaseEntity<number> {
   nome: string;
   cpf: string;
   rg: string;
-  apartamentoVisita: ApartamentoModel; 
+  data_entrada: Date;
+  apartamento_visita: ApartamentoModel; 
 }
